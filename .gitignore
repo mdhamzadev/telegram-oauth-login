@@ -1,25 +1,41 @@
-# CakePHP 3
+# Dependencies
+/vendor/
 
-/vendor/*
-/config/app.php
+# Composer
+composer.phar
 
-/tmp/cache/models/*
-!/tmp/cache/models/empty
-/tmp/cache/persistent/*
-!/tmp/cache/persistent/empty
-/tmp/cache/views/*
-!/tmp/cache/views/empty
-/tmp/sessions/*
-!/tmp/sessions/empty
-/tmp/tests/*
-!/tmp/tests/empty
+# Environment and local secrets
+.env
+.env.*
+!.env.example
+*.local
+config.local.php
+db-config.local.php
 
-/logs/*
-!/logs/empty
+# Logs and runtime files
+*.log
+logs/
+tmp/
+temp/
+cache/
 
-# CakePHP 2
+# PHPUnit and coverage
+.phpunit.result.cache
+/coverage/
 
-/app/tmp/*
-/app/Config/core.php
-/app/Config/database.php
-/vendors/*
+# PHP CS Fixer / static analysis caches
+.php-cs-fixer.cache
+.php_cs.cache
+.phpstan.cache
+.psalm/
+
+# IDEs and editors
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
